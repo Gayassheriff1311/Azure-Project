@@ -1,0 +1,16 @@
+{
+	"name": "RestResourceForJSON_Birmingham",
+	"properties": {
+		"description": "Birmingham JSON File - Rest API Source",
+		"linkedServiceName": {
+			"referenceName": "RestServiceJSON_LinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": "Birmingham.json"
+		},
+		"schema": []
+	}
+}

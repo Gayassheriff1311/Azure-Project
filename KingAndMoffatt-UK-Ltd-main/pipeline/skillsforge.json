@@ -1,0 +1,47 @@
+{
+	"name": "skillsforge",
+	"properties": {
+		"activities": [
+			{
+				"name": "Get_Record_Count",
+				"description": "Get the API Record Count ",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": {
+						"value": "@pipeline().parameters.Base_URL_Skillsforge",
+						"type": "Expression"
+					},
+					"method": "GET",
+					"headers": {
+						"x-auth-token": {
+							"value": "@pipeline().parameters.x_auth_token_key",
+							"type": "Expression"
+						}
+					}
+				}
+			}
+		],
+		"parameters": {
+			"Base_URL_Skillsforge": {
+				"type": "String",
+				"defaultValue": "https://preprod.kcl.skillsforge.net/kcl/api/atom/backfeed/v1?since_event=227a4f68-7f27-4036-91d8-95bb0d4e589e&since=2023-09-11T09:36:51.615Z"
+			},
+			"x_auth_token_key": {
+				"type": "String",
+				"defaultValue": "50b0b4dd75a942ee9eff7406e6bd294dab42bd338994ed0b76d170d4c91805717b91803ed4622c7d"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2023-11-03T11:52:27Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

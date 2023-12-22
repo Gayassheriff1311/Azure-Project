@@ -1,0 +1,13 @@
+{
+	"name": "RestServiceJSON_LS_Munich",
+	"properties": {
+		"description": "Munich data JSON File Rest Service",
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://kmstorageaccount001.blob.core.windows.net/input/JSON",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}

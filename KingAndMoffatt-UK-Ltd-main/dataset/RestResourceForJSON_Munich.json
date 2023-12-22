@@ -1,0 +1,15 @@
+{
+	"name": "RestResourceForJSON_Munich",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "RestServiceJSON_LS_Munich",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": "Munich.json"
+		},
+		"schema": []
+	}
+}

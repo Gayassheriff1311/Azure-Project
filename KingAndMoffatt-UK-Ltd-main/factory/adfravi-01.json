@@ -1,0 +1,9 @@
+{
+	"name": "adfravi-01",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "67f6096e-4047-4751-bdd3-a9151066ed14",
+		"tenantId": "8370cf14-16f3-4c16-b83c-724071654356"
+	}
+}

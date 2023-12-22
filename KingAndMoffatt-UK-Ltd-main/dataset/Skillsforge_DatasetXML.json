@@ -1,0 +1,16 @@
+{
+	"name": "Skillsforge_DatasetXML",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer_SkillsforgeAPI_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Xml",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+{
+	"name": "ToLoadMultipleExcellFiles",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkedServiceToLoadMultipleExcelFiles",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "XLSX",
+				"fileSystem": "input"
+			},
+			"sheetIndex": 0
+		},
+		"schema": [
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			}
+		]
+	}
+}

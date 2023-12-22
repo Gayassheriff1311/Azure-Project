@@ -1,0 +1,53 @@
+{
+	"name": "FinalCSV_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "KingAndMoffatt_DataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "finalResults.csv",
+				"folderPath": "FinalResults",
+				"fileSystem": "output"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "EmpID",
+				"type": "String"
+			},
+			{
+				"name": "Monday",
+				"type": "String"
+			},
+			{
+				"name": "Tuesday",
+				"type": "String"
+			},
+			{
+				"name": "Wednesday",
+				"type": "String"
+			},
+			{
+				"name": "Thursday",
+				"type": "String"
+			},
+			{
+				"name": "Friday",
+				"type": "String"
+			},
+			{
+				"name": "CityName",
+				"type": "String"
+			}
+		]
+	}
+}

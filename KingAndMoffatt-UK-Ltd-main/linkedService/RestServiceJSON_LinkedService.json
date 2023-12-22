@@ -1,0 +1,13 @@
+{
+	"name": "RestServiceJSON_LinkedService",
+	"properties": {
+		"description": "Rest Service for JSON ",
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://kmstorageaccount001.blob.core.windows.net/input/JSON",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}

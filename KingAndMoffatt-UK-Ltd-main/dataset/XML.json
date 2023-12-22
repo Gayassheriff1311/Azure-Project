@@ -1,0 +1,19 @@
+{
+	"name": "XML",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "KingAndMoffatt_DataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Xml",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Dublin.xml",
+				"folderPath": "XML",
+				"fileSystem": "input"
+			}
+		}
+	}
+}

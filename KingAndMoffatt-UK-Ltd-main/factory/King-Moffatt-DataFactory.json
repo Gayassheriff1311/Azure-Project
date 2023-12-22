@@ -1,0 +1,14 @@
+{
+	"name": "King-Moffatt-DataFactory",
+	"properties": {
+		"globalConfigurations": {
+			"PipelineBillingEnabled": "true"
+		}
+	},
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0b9e2320-7e6f-46bd-98a6-f1a0d090199e",
+		"tenantId": "19216e2a-aaad-425b-bde8-97f21b32bf04"
+	}
+}
