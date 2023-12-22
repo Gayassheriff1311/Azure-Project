@@ -103,63 +103,6 @@
 						"type": "DatasetReference"
 					}
 				]
-			},
-			{
-				"name": "Copy To SQL",
-				"type": "Copy",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
-				"dependsOn": [
-					{
-						"activity": "MultipleCSV-toSingleCSV",
-						"dependencyConditions": [
-							"Completed"
-						]
-					}
-				],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"source": {
-						"type": "DelimitedTextSource",
-						"storeSettings": {
-							"type": "AzureBlobFSReadSettings",
-							"recursive": true,
-							"enablePartitionDiscovery": false
-						},
-						"formatSettings": {
-							"type": "DelimitedTextReadSettings"
-						}
-					},
-					"enableStaging": false,
-					"enableSkipIncompatibleRow": true,
-					"logSettings": {
-						"enableCopyActivityLog": true,
-						"copyActivityLogSettings": {
-							"logLevel": "Warning",
-							"enableReliableLogging": false
-						},
-						"logLocationSettings": {
-							"linkedServiceName": {
-								"referenceName": "KingAndMoffatt_DataLakeStorage",
-								"type": "LinkedServiceReference"
-							},
-							"path": "output/LogForIncompatableRowsSQL/copyactivity-logs/finalCSV_SQL/8e56c132-e92c-4b4b-b1e0-0559f6a25846"
-						}
-					}
-				},
-				"inputs": [
-					{
-						"referenceName": "FinalCSV_DS",
-						"type": "DatasetReference"
-					}
-				]
 			}
 		],
 		"annotations": []
