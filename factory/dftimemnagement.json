@@ -1,0 +1,9 @@
+{
+	"name": "dftimemnagement",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ec9e9537-4615-4e0e-8956-6609045fadc6",
+		"tenantId": "1b9bd738-fa6e-44d7-ba42-ba1d42ab905c"
+	}
+}
