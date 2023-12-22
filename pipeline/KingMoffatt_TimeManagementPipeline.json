@@ -107,6 +107,8 @@
 			{
 				"name": "Copy To SQL",
 				"type": "Copy",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "MultipleCSV-toSingleCSV",
@@ -135,11 +137,6 @@
 							"type": "DelimitedTextReadSettings"
 						}
 					},
-					"sink": {
-						"type": "AzureSqlSink",
-						"writeBehavior": "insert",
-						"sqlWriterUseTableLock": false
-					},
 					"enableStaging": false,
 					"enableSkipIncompatibleRow": true,
 					"logSettings": {
@@ -155,25 +152,11 @@
 							},
 							"path": "output/LogForIncompatableRowsSQL/copyactivity-logs/finalCSV_SQL/8e56c132-e92c-4b4b-b1e0-0559f6a25846"
 						}
-					},
-					"translator": {
-						"type": "TabularTranslator",
-						"typeConversion": true,
-						"typeConversionSettings": {
-							"allowDataTruncation": true,
-							"treatBooleanAsNumber": false
-						}
 					}
 				},
 				"inputs": [
 					{
 						"referenceName": "FinalCSV_DS",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "EmployeeScheduleDS",
 						"type": "DatasetReference"
 					}
 				]
