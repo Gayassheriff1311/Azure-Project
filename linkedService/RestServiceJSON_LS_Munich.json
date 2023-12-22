@@ -5,7 +5,7 @@
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "https://kmstorageaccount001.blob.core.windows.net/input/JSON",
+			"url": "https://dlsakingandmoffat.blob.core.windows.net/input/JSON",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
